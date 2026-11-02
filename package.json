@@ -1,0 +1,19 @@
+{
+  "name": "farmwiseai",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.12.1",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "corepack pnpm --filter @farmwise/web dev",
+    "build": "corepack pnpm --filter @farmwise/web build",
+    "lint": "corepack pnpm --filter @farmwise/web lint",
+    "typecheck": "corepack pnpm --filter @farmwise/web typecheck",
+    "test": "corepack pnpm --filter @farmwise/web test"
+  },
+  "devDependencies": {
+    "supabase": "^2.122.0"
+  }
+}

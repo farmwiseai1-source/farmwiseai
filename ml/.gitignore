@@ -1,0 +1,12 @@
+data/raw/
+data/extracted/
+data/*.zip
+data/*.tar*
+data/audit_report.json
+weights/
+checkpoints/
+__pycache__/
+runs/
+*.onnx
+*.pt
+*.pth

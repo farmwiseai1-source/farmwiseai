@@ -1,0 +1,27 @@
+{
+  "dataset_root": "${FARMWISE_DATA_DIR}",
+  "seed": 20261029,
+  "model_version": "vision-v1-baseline",
+  "classes": ["healthy", "example_condition"],
+  "sources": [
+    {
+      "id": "eligible-source-example",
+      "root": "${FARMWISE_DATA_DIR}\\eligible-source",
+      "enabled": false,
+      "original_only": true,
+      "class_mapping": {
+        "Healthy": "healthy",
+        "VerifiedCondition": "example_condition"
+      }
+    }
+  ],
+  "image_size": 224,
+  "batch_size": 16,
+  "epochs": 8,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "patience": 2,
+  "num_workers": 0,
+  "pretrained": true,
+  "split": {"train": 0.7, "validation": 0.15, "test": 0.15}
+}
